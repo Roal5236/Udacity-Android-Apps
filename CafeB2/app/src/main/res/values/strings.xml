@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CafeB</string>
+    <string name="_91_98602_89290">+91 98602 89290</string>
+    <string name="_11am_3pm_5_9pm">11AM–3PM, 5–9PM</string>
+    <string name="address">ADDRESS</string>
+    <string name="burgers">BURGERS</string>
+    <string name="cafe_basil">CAFE BASIL</string>
+    <string name="contact">CONTACT</string>
+    <string name="desserts">DESSERTS</string>
+    <string name="estrocio_residency_caranzalem_panjim_goa_403002_india">Estrocio Residency, Caranzalem, Panjim, Goa 403002, India</string>
+    <string name="hours">HOURS</string>
+    <string name="milkshakes">MILKSHAKES</string>
+</resources>

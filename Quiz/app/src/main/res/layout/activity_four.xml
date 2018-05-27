@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linear_background2"
+    android:orientation="vertical"
+    tools:context="com.example.android.quiz.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Who killed Han Solo?"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+
+        <ImageView
+            android:id="@+id/back_cover"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/round_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hansolo" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/option_A"
+                    style="@style/radio_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_textview"
+                    android:onClick="color_radio"
+                    android:text="Darth Vader"
+                    android:textAllCaps="true" />
+
+                <RadioButton
+                    android:id="@+id/option_B"
+                    style="@style/radio_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_textview"
+                    android:onClick="color_radio1"
+                    android:text="Kylo Ren" />
+
+                <RadioButton
+                    android:id="@+id/option_C"
+                    style="@style/radio_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_textview"
+                    android:onClick="color_radio2"
+                    android:text="Luke Skywalker" />
+
+                <RadioButton
+                    android:id="@+id/option_D"
+                    style="@style/radio_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_textview"
+                    android:onClick="color_radio3"
+                    android:text="Rey" />
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#b71c1c"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/q_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="5/8"
+                android:textColor="#ffffff"
+
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/bt_launch_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rounded_textview"
+                android:onClick="ifCorrect"
+                android:padding="16dp"
+                android:text="NEXT >" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
